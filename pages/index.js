@@ -15,7 +15,7 @@ export default function Home(props) {
       <main>
         <Header title="Welcome to my app!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started by editing <code>pages/index</code>
         </p>
       </main>
 
