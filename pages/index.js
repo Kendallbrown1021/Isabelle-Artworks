@@ -1,9 +1,15 @@
 import { createClient } from "contentful";
-
+import Head from "next/head";
 export default function Home(props) {
   const { posts } = props;
 
-  return <div className="container"></div>;
+  return (
+    <div className="container">
+      <Head>
+        <title>Isabelle Artwork</title>
+      </Head>
+    </div>
+  );
 }
 
 export async function getStaticProps() {

@@ -66,8 +66,8 @@
     margin-left: auto;
     position: relative;
     padding: 0;
-    top: 30%;
-    transform: translateY(-50%);
+    top: 50%;
+    /* transform: translateY(-20%); */
     list-style: none;
   }
   .navExpanded ul li {
