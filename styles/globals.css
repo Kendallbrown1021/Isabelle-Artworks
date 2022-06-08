@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;500;700&family=Marck+Script&display=swap");
+
+:root {
+  --main-color: #055c5d;
+  --secondary-color: #a9efb9;
+  --accent: #04186e;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Karma", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 * {
@@ -11,7 +20,7 @@ body {
 }
 
 main {
-  padding: 5rem 0;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
