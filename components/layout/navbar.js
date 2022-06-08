@@ -10,21 +10,23 @@ const NavBar = () => {
       <div className={styles.logo}>
         <Link href="/">Isabelle Artwork</Link>
       </div>
-      {isNavExpanded ? (
-        <CloseIcon
-          className={styles.hamburger}
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        />
-      ) : (
-        <MenuIcon
-          className={styles.hamburger}
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        />
-      )}
+      <div>
+        {isNavExpanded ? (
+          <CloseIcon
+            className={styles.hamburger}
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          />
+        ) : (
+          <MenuIcon
+            className={styles.hamburger}
+            onClick={() => {
+              setIsNavExpanded(!isNavExpanded);
+            }}
+          />
+        )}
+      </div>
 
       <nav className={isNavExpanded ? styles.navExpanded : styles.nav}>
         <ul>
