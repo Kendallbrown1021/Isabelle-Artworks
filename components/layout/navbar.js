@@ -30,6 +30,17 @@ const NavBar = () => {
 
       <nav className={isNavExpanded ? styles.navExpanded : styles.nav}>
         <ul>
+          <li className={styles.home}>
+            <Link href="/">
+              <a
+                onClick={() => {
+                  setIsNavExpanded(!isNavExpanded);
+                }}
+              >
+                Home
+              </a>
+            </Link>
+          </li>
           <li>
             <Link href="/gallery">
               <a
