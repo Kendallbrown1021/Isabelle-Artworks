@@ -1,5 +1,8 @@
 import { createClient } from "contentful";
 import Head from "next/head";
+import HeroSection from "../components/layout/hero-section";
+import Section from "../components/layout/section";
+import Featured from "../components/layout/featured";
 export default function Home(props) {
   const { posts } = props;
 
@@ -8,6 +11,10 @@ export default function Home(props) {
       <Head>
         <title>Isabelle Artwork</title>
       </Head>
+      <HeroSection />
+      {/* <Section>
+        <Featured />
+      </Section> */}
     </div>
   );
 }
@@ -19,7 +26,7 @@ export async function getStaticProps() {
   });
 
   const data = await client.getEntries({ content_type: "galleryPhoto" });
-
+  console.log(data.items);
   return {
     props: {
       posts: data.items,

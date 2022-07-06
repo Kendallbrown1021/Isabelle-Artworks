@@ -6,7 +6,11 @@ import CloseIcon from "@mui/icons-material/Close";
 const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
-    <header className={styles.header}>
+    <header
+      className={
+        !isNavExpanded ? `${styles.header}` : `${styles.header} ${styles.show}`
+      }
+    >
       <div className={styles.logo}>
         <Link href="/">Isabelle Artwork</Link>
       </div>

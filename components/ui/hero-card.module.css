@@ -1,0 +1,20 @@
+.heroCard {
+  height: 550px;
+  width: 550px;
+  background-color: white;
+}
+
+.heroCard > span {
+  height: 100%;
+  width: 100%;
+  position: unset !important;
+  object-fit: contain;
+  overflow: visible;
+}
+
+.unset-img {
+  width: 100%;
+}
+.unset-img > div {
+  position: unset !important;
+}

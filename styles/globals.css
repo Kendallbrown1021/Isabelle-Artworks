@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karma:wght@400;500;700&family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 :root {
-  --main-color: #055c5d;
+  --main-color: #008080;
   --secondary-color: #a9efb9;
   --accent: #04186e;
+  --background: #f4faff;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Karma", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--background);
+  font-family: "Abril Fatface";
+
+  height: 100%;
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 main {
   padding: 0;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 code {
@@ -36,9 +36,6 @@ code {
 }
 
 .container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: auto;
 }
