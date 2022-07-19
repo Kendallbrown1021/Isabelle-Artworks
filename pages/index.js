@@ -15,7 +15,7 @@ export default function Home(props) {
       </Head>
       <HeroSection />
 
-      <Featured />
+      {/* <Featured /> */}
     </div>
   );
 }
