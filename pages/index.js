@@ -5,16 +5,17 @@ import Section from "../components/layout/section";
 import Featured from "../components/layout/featured";
 export default function Home(props) {
   const { posts } = props;
-
+  console.log(posts);
+  const post = posts[0];
+  console.log(post.fields.image.fields.file.url);
   return (
     <div className="container">
       <Head>
         <title>Isabelle Artwork</title>
       </Head>
       <HeroSection />
-      {/* <Section>
-        <Featured />
-      </Section> */}
+
+      <Featured />
     </div>
   );
 }
@@ -25,7 +26,7 @@ export async function getStaticProps() {
     accessToken: process.env.ACCESS_TOKEN,
   });
 
-  const data = await client.getEntries({ content_type: "galleryPhoto" });
+  const data = await client.getEntries();
   console.log(data.items);
   return {
     props: {

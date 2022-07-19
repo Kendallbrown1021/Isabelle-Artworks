@@ -1,0 +1,32 @@
+.gallerySection {
+  max-width: 1244px;
+  height: 100vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.galleryContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 15px;
+
+  justify-content: center;
+}
+.collectionHeader {
+  margin: 15px 0 15px 75px;
+  font-size: 38px;
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 850px) {
+  .collectionHeader {
+    font-size: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

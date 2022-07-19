@@ -1,0 +1,21 @@
+.cardContainer {
+  width: 350px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImageCont {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.cardImage {
+}
+.cardContent {
+}
+
+.cardTitle {
+  padding: 10px 0 0 0;
+  color: var(--main-color);
+  font-size: 26px;
+}
