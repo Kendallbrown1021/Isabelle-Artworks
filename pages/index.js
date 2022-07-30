@@ -7,7 +7,7 @@ export default function Home(props) {
   const { posts } = props;
   console.log(posts);
   const post = posts[0];
-  console.log(post.fields.image.fields.file.url);
+  console.log(post);
   return (
     <div className="container">
       <Head>

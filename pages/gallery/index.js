@@ -1,13 +1,9 @@
 import React from "react";
 import { createClient } from "contentful";
 import GalleryList from "../../components/gallery/gallery-list";
-const GalleryHomePage = (posts, dolls) => {
-  console.log(dolls);
-  return (
-    <div>
-      <GalleryList posts={posts} />
-    </div>
-  );
+const GalleryHomePage = (collections) => {
+  console.log(collections);
+  return <div>{/* // <GalleryList posts={posts} /> */}</div>;
 };
 
 export async function getStaticProps() {
@@ -16,15 +12,13 @@ export async function getStaticProps() {
     accessToken: process.env.ACCESS_TOKEN,
   });
 
-  const data = await client.getEntries({
-    content_type: "artwork",
-  });
+  const data = await client.getEntries("collections");
 
   console.log(data.items);
 
   return {
     props: {
-      posts: data.items,
+      collections: data,
     },
   };
 }
