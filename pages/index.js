@@ -5,7 +5,7 @@ import Section from "../components/layout/section";
 import Featured from "../components/layout/featured";
 export default function Home(props) {
   const { posts } = props;
-  console.log(posts);
+  // console.log(posts);
   const post = posts[0];
   console.log(post);
   return (

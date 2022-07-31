@@ -1,9 +1,20 @@
 import React from "react";
 import { createClient } from "contentful";
-import GalleryList from "../../components/gallery/gallery-list";
+import CollectionList from "../../components/collection/collection-list";
+import Section from "../../components/layout/section";
 const GalleryHomePage = (collections) => {
-  console.log(collections);
-  return <div>{/* // <GalleryList posts={posts} /> */}</div>;
+  const { items } = collections.collections;
+  const art = [
+    items.filter((item) => item.metadata.tags[0].sys.id === "collection"),
+  ];
+  const artCollection = art[0];
+  console.log(artCollection);
+  return (
+    <div>
+      <Section art={art}></Section>
+      <CollectionList art={artCollection} />
+    </div>
+  );
 };
 
 export async function getStaticProps() {
