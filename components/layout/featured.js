@@ -7,7 +7,7 @@ const Featured = (props) => {
   console.log(art);
   return (
     <section className={styles.featured}>
-      <div>
+      <div className={styles.featuredContainer}>
         {art.map((pic, index) => {
           return <CollectionItem key={index} art={art[index]} />;
         })}

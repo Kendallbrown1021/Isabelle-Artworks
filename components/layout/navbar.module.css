@@ -10,8 +10,12 @@
 
 .logo {
   margin-left: 25px;
-  width: 25%;
+  width: 70px;
+
   /* font-family: "Marck Script", sans-serif !important; */
+}
+.logoSVG {
+  height: 65px;
 }
 .logo a {
   text-decoration: none;
@@ -39,6 +43,7 @@
   font-weight: 500;
   font-size: 18px;
   margin: 0 5px;
+  font-family: "Abril Fatface";
 }
 .hamburger {
   border: 0;

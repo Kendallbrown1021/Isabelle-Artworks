@@ -2,6 +2,16 @@
   height: auto;
   width: 100%;
 }
+
+.featuredContainer {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
 .text {
   color: white;
 }

@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+
+import Logo from "../../public/images/LOGOISA.svg";
+
 import Link from "next/link";
+import Image from "next/image";
+
 import styles from "./navbar.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -12,7 +17,7 @@ const NavBar = () => {
       }
     >
       <div className={styles.logo}>
-        <Link href="/">Isabelle Artwork</Link>
+        <Logo className={styles.logoSVG} />
       </div>
       <div>
         {isNavExpanded ? (
