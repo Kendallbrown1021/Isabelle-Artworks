@@ -10,11 +10,11 @@ const CollectionItem = (props) => {
         <Image
           src={`http:${art.fields.mainImage.fields.file.url}`}
           alt={`${art.fields.title} collection`}
-          layout="responsive"
-          width={550}
-          height={450}
+          layout="fill"
+          className={styles.image}
         />
       </div>
+      <div className={styles.cardContent}></div>
     </div>
   );
 };
