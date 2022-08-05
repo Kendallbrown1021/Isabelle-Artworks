@@ -3,7 +3,7 @@ import styles from "./collection-item.module.css";
 import Image from "next/image";
 const CollectionItem = (props) => {
   const { art } = props;
-  console.log(art.fields);
+  console.log(props);
   return (
     <div className={styles.collectionItemContainer}>
       <div className={styles.collectionImageCont}>
@@ -11,8 +11,8 @@ const CollectionItem = (props) => {
           src={`http:${art.fields.mainImage.fields.file.url}`}
           alt={`${art.fields.title} collection`}
           layout="responsive"
-          width={550}
-          height={450}
+          width={350}
+          height={350}
         />
       </div>
     </div>

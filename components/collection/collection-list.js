@@ -3,12 +3,12 @@ import CollectionItem from "./collection-item";
 import styles from "./collection-list.module.css";
 const CollectionList = (props) => {
   const { art } = props;
-  console.log(art);
+  console.log(props);
   return (
     <div className={styles.collectionList}>
-      {art.map((art, index) => {
+      {/* {art.map((art, index) => {
         return <CollectionItem key={index} art={art} />;
-      })}
+      })} */}
     </div>
   );
 };
