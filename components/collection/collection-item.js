@@ -3,7 +3,7 @@ import styles from "./collection-item.module.css";
 import Image from "next/image";
 const CollectionItem = (props) => {
   const { art } = props;
-  console.log(art.fields);
+  console.log(props);
   return (
     <div className={styles.collectionItemContainer}>
       <div className={styles.collectionImageCont}>
