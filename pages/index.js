@@ -5,6 +5,7 @@ import Section from "../components/layout/section";
 import Featured from "../components/layout/featured";
 
 export default function Home(collections) {
+  console.log(collections);
   const { items } = collections.collections;
   const art = [
     items.filter((item) => item.metadata.tags[0].sys.id === "collection"),

@@ -17,7 +17,9 @@ const NavBar = () => {
       }
     >
       <div className={styles.logo}>
-        <Logo className={styles.logoSVG} />
+        <Link href="/">
+          <Logo className={styles.logoSVG} />
+        </Link>
       </div>
       <div>
         {isNavExpanded ? (

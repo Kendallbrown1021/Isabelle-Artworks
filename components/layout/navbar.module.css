@@ -16,7 +16,9 @@
 }
 .logoSVG {
   height: 65px;
+  cursor: pointer;
 }
+
 .logo a {
   text-decoration: none;
   font-size: 28px;
