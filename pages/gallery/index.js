@@ -1,5 +1,6 @@
 import React from "react";
 import { createClient } from "contentful";
+import GalleryList from "../../components/gallery/gallery-list";
 import CollectionList from "../../components/collection/collection-list";
 import Section from "../../components/layout/section";
 const GalleryHomePage = (collections) => {
@@ -7,12 +8,12 @@ const GalleryHomePage = (collections) => {
   const art = [
     items.filter((item) => item.metadata.tags[0].sys.id === "collection"),
   ];
-  const artCollection = art[0];
-  console.log(artCollection);
+  const artCollection = items.slice(2);
+  console.log(items.slice(2));
   return (
     <div>
-      <Section art={art}></Section>
-      <CollectionList art={artCollection} />
+      <Section></Section>
+      <GalleryList posts={artCollection} />
     </div>
   );
 };
@@ -23,7 +24,7 @@ export async function getStaticProps() {
     accessToken: process.env.ACCESS_TOKEN,
   });
 
-  const data = await client.getEntries("collections");
+  const data = await client.getEntries("artwork");
 
   console.log(data.items);
 

@@ -6,9 +6,9 @@ const CollectionList = (props) => {
   console.log(props);
   return (
     <div className={styles.collectionList}>
-      {/* {art.map((art, index) => {
+      {art.map((art, index) => {
         return <CollectionItem key={index} art={art} />;
-      })} */}
+      })}
     </div>
   );
 };

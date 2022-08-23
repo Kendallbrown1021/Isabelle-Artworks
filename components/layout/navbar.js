@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
 import Logo from "../../public/images/LOGOISA.svg";
-
 import Link from "next/link";
 import Image from "next/image";
-
 import styles from "./navbar.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+
 const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  console.log(isNavExpanded);
   return (
     <header
       className={
@@ -41,81 +41,39 @@ const NavBar = () => {
 
       <nav className={isNavExpanded ? styles.navExpanded : styles.nav}>
         <ul>
-          <li className={styles.home}>
+          <li className={styles.home} onClick={() => setIsNavExpanded(false)}>
             <Link href="/">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Home
-              </a>
+              <a>Home</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/gallery">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Gallery
-              </a>
+              <a>Gallery</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/the-artist">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                The Artist
-              </a>
+              <a>The Artist</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/commissions">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Commissions
-              </a>
+              <a>Commissions</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/workshops">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Workshops
-              </a>
+              <a>Workshops</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/donations">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Donations
-              </a>
+              <a>Donations</a>
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsNavExpanded(false)}>
             <Link href="/contact">
-              <a
-                onClick={() => {
-                  setIsNavExpanded(!isNavExpanded);
-                }}
-              >
-                Contact
-              </a>
+              <a>Contact</a>
             </Link>
           </li>
         </ul>
