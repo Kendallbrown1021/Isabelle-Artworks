@@ -9,6 +9,17 @@
   margin: 3rem 0;
   text-align: center;
 }
+.contentHeader::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  left: 0;
+  top: 30%;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: var(--header);
+}
 
 .content {
   font-size: 1.8rem;

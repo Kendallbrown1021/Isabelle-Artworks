@@ -1,0 +1,22 @@
+.commissionHero {
+  height: 20vh;
+}
+.commissionTextCont {
+  width: 100%;
+}
+.commissionText {
+  text-align: center;
+  font-size: 4.8rem;
+}
+
+.commissionText::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  left: 0;
+  top: 30%;
+  position: relative;
+  margin: 0 auto;
+  border-bottom: var(--header);
+}

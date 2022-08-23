@@ -1,7 +1,11 @@
 import React from "react";
-
+import CommissionHero from "../../components/ui/commissions-hero";
 const CommissionsPage = () => {
-  return <div>CommissionsPage</div>;
+  return (
+    <div>
+      <CommissionHero />
+    </div>
+  );
 };
 
 export default CommissionsPage;

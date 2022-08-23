@@ -29,6 +29,7 @@
   width: 75%;
   z-index: 3;
   transition: all 0.4s ease-in-out;
+  position: sticky;
 }
 .nav ul {
   display: flex;
@@ -38,13 +39,19 @@
 }
 .nav ul li {
   list-style: none;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+.nav ul li:hover {
+  border-bottom: 2px solid var(--secondary-color);
 }
 .nav ul li a {
   text-decoration: none;
   color: var(--main-color);
   font-weight: 500;
-  font-size: 18px;
-  margin: 0 5px;
+  font-size: 2rem;
+  margin: 0;
   font-family: "Abril Fatface";
 }
 .hamburger {
@@ -119,6 +126,9 @@
   }
   .nav ul {
     display: none;
+  }
+  .nav ul li {
+    font-size: 1.8rem;
   }
   .navExpanded {
     display: flex;
