@@ -17,7 +17,7 @@ const Section = (props) => {
       <div className={styles.mainTextCont}>
         <p className={styles.mainText}>
           Isabelle Artwork <br />
-          Collections
+          Collection
         </p>
       </div>
     </section>
