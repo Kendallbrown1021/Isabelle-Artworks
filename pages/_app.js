@@ -1,5 +1,6 @@
 import "@styles/globals.css";
 import Layout from "../components/layout/layout";
+import Footer from "../footer";
 function Application({ Component, pageProps }) {
   return (
     <Layout>

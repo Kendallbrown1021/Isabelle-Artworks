@@ -4,7 +4,7 @@ import CollectionItem from "../collection/collection-item";
 
 const Featured = (props) => {
   const { art } = props;
-  console.log(art);
+
   return (
     <section className={styles.featured}>
       <div className={styles.featuredContainer}>

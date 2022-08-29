@@ -1,6 +1,6 @@
 .gallerySection {
   max-width: 1244px;
-  height: 100vh;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  gap: 15px;
+  gap: 35px;
 
   justify-content: center;
 }

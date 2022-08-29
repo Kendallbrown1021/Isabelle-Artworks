@@ -7,12 +7,6 @@ import blueLady from "../../public/pinkbluelady.jpg";
 import HeroCard from "../ui/heroCard";
 
 const HeroSection = (props) => {
-  const images = [
-    { id: 1, url: eyesGlory },
-    { id: 2, url: blueLady },
-    { id: 3, url: butterFly },
-  ];
-
   return (
     <div className={styles.heroSection}>
       <div className={styles.heroContainer}>

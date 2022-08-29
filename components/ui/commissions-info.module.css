@@ -26,7 +26,7 @@
   color: var(--secondary-color);
 }
 .infoEven {
-  transform: translateX(15%);
+  transform: translateX(35%);
 }
 .infoOdd {
   transform: translateX(-15%);

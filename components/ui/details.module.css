@@ -1,0 +1,41 @@
+.detailSection {
+  height: 100vh;
+}
+.detail {
+  margin: 4rem 0;
+}
+.detailHeader {
+  font-size: 2.8rem;
+  margin: 5rem 0;
+}
+.detailHeader::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  left: 0;
+  top: 30%;
+  position: relative;
+  margin: 1rem auto;
+  border-bottom: var(--header);
+}
+.detailParentContainer {
+  height: 30rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.detailInfo {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+.detailBullet {
+  font-size: 3.5rem;
+  color: var(--secondary-color);
+}

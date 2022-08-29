@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./section.module.css";
 const Section = (props) => {
   const { art } = props;
-  console.log(art);
+
   return (
     <section className={styles.featured}>
       <Image

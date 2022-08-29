@@ -1,6 +1,7 @@
 .commissionHero {
   height: 25vh;
   padding-bottom: 0;
+  margin-bottom: 2rem;
 }
 .commissionTextCont {
   width: 100%;
@@ -19,7 +20,7 @@
   left: 0;
   top: 30%;
   position: relative;
-  margin: 0 auto;
+  margin: 1rem auto;
   border-bottom: var(--header);
 }
 
