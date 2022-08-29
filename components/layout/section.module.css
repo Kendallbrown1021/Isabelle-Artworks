@@ -1,6 +1,6 @@
 .featured {
   height: 60vh;
-  max-width: 2552px;
+  max-width: 2752px;
   background-color: white;
   text-align: center;
 
@@ -23,17 +23,19 @@
   height: 100%;
   z-index: 9;
 }
-.mainTextCont p {
+.mainText {
   position: relative;
+  display: inline-block;
   top: 50%;
   transform: translateY(-50%);
   z-index: 9;
   color: white;
-  font-size: 4.8rem;
+  font-size: 7.8rem;
 }
 
-@media screen and(max-width:850px) {
-  .mainTextCont p {
-    font-size: 5.6rem;
+@media screen and(max-width:750px) {
+  .mainText {
+    font-size: 5.6rem !important;
+    color: red;
   }
 }

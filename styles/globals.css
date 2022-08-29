@@ -4,7 +4,7 @@
 
 :root {
   --main-color: #000;
-  --secondary-color: #a9efb9;
+  --secondary-color: #008080;
   --accent: #04186e;
   --background: #f4faff;
   --header: 2px solid var(--secondary-color);

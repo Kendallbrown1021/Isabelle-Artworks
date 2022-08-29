@@ -1,0 +1,46 @@
+.commissionInfoSec {
+  height: 60vh;
+  padding-top: 0;
+}
+.commissionsParentContainer {
+  max-width: 1244px;
+  margin: 0 auto;
+}
+.commissionInfoCont {
+  width: 45%;
+  margin: 0 auto 3.5rem auto;
+}
+
+.commissionInfo {
+  font-size: 2.2rem;
+  line-height: 140%;
+  font-family: "Roboto", sans-serif;
+}
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.spanEmail {
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.infoEven {
+  transform: translateX(15%);
+}
+.infoOdd {
+  transform: translateX(-15%);
+}
+
+@media screen and (max-width: 700px) {
+  .commissionInfoCont {
+    width: 100%;
+    padding: 0 2.5rem;
+  }
+  .infoOdd {
+    transform: translateX(0);
+  }
+  .infoEven {
+    transform: translateX(0);
+  }
+}
