@@ -6,7 +6,7 @@ const CollectionItem = (props) => {
   const router = useRouter();
   const { art } = props;
   const urlParam = art.sys.id;
-  console.log(art);
+
   return (
     <div
       className={styles.collectionItemContainer}

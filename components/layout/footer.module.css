@@ -4,7 +4,7 @@
   margin-top: 10rem;
   background-color: var(--secondary-color);
   /* margin-top: -25rem; */
-  clear: both;
+
   /* position: relative !important;
   left: 0;
   right: 0;
@@ -32,6 +32,8 @@
 
 .footerLinkList {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-around;
   list-style: none;
   text-decoration: none;
