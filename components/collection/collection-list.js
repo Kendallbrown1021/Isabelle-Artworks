@@ -3,7 +3,7 @@ import CollectionItem from "./collection-item";
 import styles from "./collection-list.module.css";
 const CollectionList = (props) => {
   const { art } = props;
-
+  console.log(art);
   return (
     <div className={styles.collectionList}>
       {art.map((art, index) => {

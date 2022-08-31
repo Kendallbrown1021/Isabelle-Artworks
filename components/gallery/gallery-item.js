@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./gallery-item.module.css";
 const GalleryItem = (props) => {
   const { posts } = props;
-  console.log(posts);
+  console.log(props);
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardImageCont}>

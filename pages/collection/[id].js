@@ -1,16 +1,18 @@
 import React from "react";
 import CollectionSection from "../../components/layout/collection-section";
+import CollectionList from "../../components/collection/collection-list";
 import GalleryList from "../../components/gallery/gallery-list";
 import GalleryItem from "../../components/gallery/gallery-item";
 import { createClient } from "contentful";
 const Collection = ({ collections }) => {
   // const items = collections.fields.description?.content;
   const posts = collections.fields.item;
-  // console.log(items);
+  console.log(posts);
   return (
     <div>
       <CollectionSection collection={collections} />
-      <GalleryList posts={posts} />
+      <CollectionList art={posts} />
+      {/* <GalleryList post={posts} /> */}
     </div>
   );
 };
@@ -33,7 +35,7 @@ export async function getStaticPaths() {
   const paths = collection.items.map((item) => ({
     params: { id: item.sys.id },
   }));
-
+  console.log(paths);
   return {
     paths: paths,
     fallback: false,

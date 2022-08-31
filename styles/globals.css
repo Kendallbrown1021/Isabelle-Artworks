@@ -15,10 +15,10 @@ body {
   background-color: var(--background);
   font-family: "Abril Fatface";
   font-size: 62.5%;
-  height: 100%;
-  /* width: 100% !important;
+  height: 100vh;
+
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
 }
 
 * {
@@ -35,8 +35,8 @@ main {
   padding: 0;
   flex: 1;
   height: auto;
-  padding-bottom: 5rem;
-  overflow: auto;
+  padding-bottom: 0 0 5rem;
+  /* overflow: auto; */
 }
 
 code {
@@ -48,5 +48,5 @@ code {
 
 .container {
   width: 100%;
-  min-height: 100%;
+  height: auto;
 }

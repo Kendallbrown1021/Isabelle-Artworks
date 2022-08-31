@@ -6,14 +6,14 @@ import Section from "../../components/layout/section";
 const GalleryHomePage = (collections) => {
   const { items } = collections.collections;
   const art = [
-    items.filter((item) => item.metadata.tags[0].sys.id === "collection"),
+    items.filter((item) => item.metadata.tags[0].sys.id !== "collection"),
   ];
   const artCollection = items.slice(2);
-  console.log(items.slice(2));
+  console.log(art);
   return (
     <div>
       <Section></Section>
-      <GalleryList posts={artCollection} />
+      <GalleryList posts={art} />
     </div>
   );
 };

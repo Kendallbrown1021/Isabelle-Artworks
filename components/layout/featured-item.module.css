@@ -1,6 +1,6 @@
 .collectionItemContainer {
   height: auto;
-  width: 350px;
+  width: 550px;
   padding: 0 1rem;
 }
 .collectionImageCont {
@@ -8,14 +8,14 @@
   width: 100%;
 }
 /* .collectionImageCont > span {
-  position: unset !important;
-}
-.collectionImageCont .image {
-  object-fit: contain !important;
-  width: 100% !important;
-  position: !important;
-  height: unset !important;
-} */
+    position: unset !important;
+  }
+  .collectionImageCont .image {
+    object-fit: contain !important;
+    width: 100% !important;
+    position: !important;
+    height: unset !important;
+  } */
 .cardContent {
   height: 5rem;
   text-align: center;
@@ -24,5 +24,6 @@
 .cardContent .collectionTitle {
   padding: 1rem 0;
   font-size: 2.4rem;
+  margin-top: 2rem;
   font-family: "Roboto";
 }

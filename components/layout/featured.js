@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./featured.module.css";
-import CollectionItem from "../collection/collection-item";
+import FeaturedItem from "../layout/featured-item";
 
 const Featured = (props) => {
   const { art } = props;
-
+  console.log(art);
   return (
     <section className={styles.featured}>
       <div className={styles.featuredContainer}>
         {art.map((pic, index) => {
-          return <CollectionItem key={index} art={art[index]} />;
+          return <FeaturedItem key={index} art={art[index]} />;
         })}
       </div>
     </section>

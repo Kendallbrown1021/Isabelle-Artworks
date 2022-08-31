@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "./collection-item.module.css";
+import styles from "./featured-item.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
-const CollectionItem = (props) => {
+const FeaturedItem = (props) => {
   const router = useRouter();
   const { art } = props;
   const urlParam = art.sys.id;
@@ -14,7 +14,7 @@ const CollectionItem = (props) => {
     >
       <div className={styles.collectionImageCont}>
         <Image
-          src={`http:${art.fields.image.fields.file.url}`}
+          src={`http:${art.fields.mainImage.fields.file.url}`}
           alt={`${art.fields.title} collection`}
           layout="responsive"
           width={350}
@@ -29,4 +29,4 @@ const CollectionItem = (props) => {
   );
 };
 
-export default CollectionItem;
+export default FeaturedItem;
