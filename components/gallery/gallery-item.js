@@ -3,10 +3,11 @@ import Image from "next/image";
 import styles from "./gallery-item.module.css";
 const GalleryItem = (props) => {
   const { posts } = props;
-  console.log(posts.fields);
+  console.log(posts);
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardImageCont}>
+        {" "}
         <Image
           src={`http:${posts.fields.image.fields.file.url}`}
           alt={posts.fields.title}
