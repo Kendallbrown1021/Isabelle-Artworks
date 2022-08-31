@@ -1,6 +1,6 @@
 .collectionList {
   width: 90%;
-  height: 100vh;
+  height: auto;
   margin: 3rem auto;
   gap: 30px;
   display: flex;
